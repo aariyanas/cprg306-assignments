@@ -1,24 +1,11 @@
-export default function Page(){
-    let dog1 = {
-        name: "Buddy",
-        age: 1,
-        breed: "Poodle",
-        color: "White",
-    };
-
-    let dog2 = {
-        name: "Milo",
-        age: 1,
-        breed: "GOlden Retriever",
-        color: "Golden",
-    };
-
-    let dog3 = {
-        name: "MAx",
-        age: 1,
-        breed: "Labrador",
-        color: "Black",
-    };
-
-    return(4)
+import ItemList from "./item-list";
+export default function Page({name, quantity, category}){
+    return (
+    <main>
+        <h1>Shopping List</h1>
+        <div>
+            <ItemList />
+        </div>
+    </main>
+    );
 }
