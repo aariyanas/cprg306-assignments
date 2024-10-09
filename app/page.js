@@ -2,11 +2,18 @@ import Link from "next/link";
 
 export default function Page(){
   return (
-  <div>
-    <h1>CPRG 306: Web Development 2 - Assignments</h1>
-    <Link href="http://localhost:3000/week-2">Week 2</Link>
-    <Link href="http://localhost:3000/week-3">Week 3</Link>
-    <Link href="http://localhost:3000/week-4">Week 4</Link>
+  <div className="h-screen bg-lime-100">
+    <h1 className="p-4 mb-8 text-lime-100 text-4xl font-bold text-center border-8 border-emerald-800 bg-gradient-to-bl from-rose-600 to-teal-700">CPRG 306: Web Development 2 - Assignments</h1>
+    <ol className="list-disc list-inside text-center text-lime-900 text-xl">
+      <li> Week 2 - click <Link className=" font-semibold hover:underline hover:text-blue-600" href="http://localhost:3000/week-2"> here!</Link>
+      </li>
+      <li>
+        Week 3 - click <Link className=" font-semibold hover:underline hover:text-blue-600" href="http://localhost:3000/week-3"> here!</Link>
+      </li>
+      <li>
+        Week 4 - click <Link className=" font-semibold hover:underline hover:text-blue-600" href="http://localhost:3000/week-4"> here!</Link>
+      </li>
+    </ol>
   </div>
   )
 };
