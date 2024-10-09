@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function Item (name, quantity, category){
+export default function Item ({name, quantity, category}){
     return(
         <div>
             <ul>
-                <li>{Item.name}</li>
-                <li>{Item.quantity}</li>
-                <li>{Item.category}</li>
+                <li>{name}</li>
+                <li>{quantity}</li>
+                <li>{category}</li>
             </ul>
         </div>
     );
