@@ -29,7 +29,7 @@ export default function Quantity(){
         alert(`New item added: ${newItem.quantity} ${newItem.name} to category - ${newItem.category}`);
         setName("");
         setQuantity(1);
-        setCategory("Produce");
+        setCategory("Select a category");
     }
 
     return(
@@ -61,7 +61,7 @@ export default function Quantity(){
                         <button type="button" className = "rounded-2xl h-10 w-24 ml-10 bg-pink-700 text-gray-200 border-2 border-pink-900 hover:bg-rose-500 hover:text-yellow-950 active:underline active:bg-rose-30 active:text-stone-800 active:border-2 active:border-pink-700" onClick={decrement}>Decrement</button>
                     </div>
                     <div className="flex justify-center">
-                        <input type="submit" value="Add Item" className="bg-blue-900 text-slate-300 hover:bg-blue-400 w-64 p-2 rounded-full text-center bg-emerald-600 border border-green-900 border-2 hover:bg-emerald-400 hover:text-yellow-950 active:bg-emerald-300 active:underline"></input>
+                        <input type="submit" value="Add Item" className="bg-blue-900 text-gray-200 hover:bg-blue-400 w-64 p-2 rounded-full text-center bg-emerald-600 border border-green-900 border-2 hover:bg-emerald-400 hover:text-yellow-950 active:bg-emerald-300 active:underline"></input>
                     </div>
                 </div>
             </form>
