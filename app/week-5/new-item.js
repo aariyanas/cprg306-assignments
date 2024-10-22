@@ -34,7 +34,7 @@ export default function Quantity(){
 
     return(
         <div>
-            <h2 className="text-2xl text-center font-bold text-lime-700 mb-12 pt-6">Add New Item</h2>
+            <h2 className="text-2xl text-center font-bold text-lime-700 mb-6 pt-8">Add New Item</h2>
             <form onSubmit={(event) => handleSubmit(event)}>
                 <div className="flex justify-center">
                     <input className="border border-black mr-2 pl-1" id="name" type="text" placeholder="Enter item name" value={name} required onChange={(event) => setName(event.target.value)}></input>
