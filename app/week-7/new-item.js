@@ -3,10 +3,11 @@
 import Item from "../week-3/item";
 import { useState } from "react";
 
-export default function Quantity(){
+export default function NewItem({onAddItem}) {
     const [quantity, setQuantity] = useState(1);
     const [name, setName] = useState("");
     const [category, setCategory] = useState("Select a category");
+
 
     const increment = () => {
         if (quantity < 20){
@@ -25,6 +26,9 @@ export default function Quantity(){
     const handleSubmit = (event) => {
         event.preventDefault();
         let newItem = {name, quantity, category};
+        const id= Math.floor(Math.random() * 1000);
+        newItem.id = id;
+        onAddItem(newItem);
         console.log(newItem);
         alert(`New item added: ${newItem.quantity} ${newItem.name} to category - ${newItem.category}`);
         setName("");
@@ -55,7 +59,7 @@ export default function Quantity(){
                     </select>
                 </div>
                 <div className="mr-2">
-                    <p className="text-blue-700 text-xl font-semibold mt-4 text-center">Quantity: {quantity}</p>
+                    <p className="text-blue-700 text-xl font-semibold mt-4 text-center">newItem: {quantity}</p>
                     <div className="flex justify-center mb-6">
                         <button type="button" className = "rounded-2xl h-10 w-24 mr-10 bg-cyan-600 text-gray-200 border-2 border-sky-700 hover:bg-cyan-500 hover:text-yellow-950 active:bg-blue-300 active:underline active:text-stone-800 active:border-2 active:border-cyan-600" onClick={increment}>Increment</button>
                         <button type="button" className = "rounded-2xl h-10 w-24 ml-10 bg-pink-700 text-gray-200 border-2 border-pink-900 hover:bg-rose-500 hover:text-yellow-950 active:underline active:bg-rose-30 active:text-stone-800 active:border-2 active:border-pink-700" onClick={decrement}>Decrement</button>
@@ -69,15 +73,3 @@ export default function Quantity(){
     );
 }
 
-export function handleSubmit(){
-    const newItem = {
-        name: Item.name,
-        quantity: Item.quantity,
-        category: Item.category
-    };
-    console.log(newItem);
-    alert(`New item added: ${newItem.quantity} ${newItem.name} to ${newItem.category}`);
-    setName("");
-    setQuantity(1);
-    setCategory("Select a category");
-}
