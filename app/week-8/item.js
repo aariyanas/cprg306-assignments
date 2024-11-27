@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Item ({name, quantity, category}){
+export default function Item ({id, name, quantity, category}){
     return(
         <div>
             <ul className="list-disc mb-4">
@@ -12,4 +12,3 @@ export default function Item ({name, quantity, category}){
         </div>
     );
 } 
-
