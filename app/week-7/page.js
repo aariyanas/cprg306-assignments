@@ -21,5 +21,5 @@ export default function Page(){
             <ItemList items={items} />
         </div>
     </main>
-    );
+    ); 
 }
