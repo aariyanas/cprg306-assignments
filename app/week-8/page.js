@@ -4,13 +4,19 @@ import { useState } from "react";
 import ItemList from "./item-list";
 import NewItem from "./new-item";
 import itemsData from "./items.json";
+import MealIdeas from "./meal-ideas";
 
 export default function Page(){
     const [items, setItems] = useState([...itemsData]);
+    const [selectedItemName, setSelectedItemName] = useState("");
 
     const handleAddItem = (item) => {
         console.log("This is the item", item);
         setItems([...items, item]);
+    }
+
+    const handleItemSelect = (item) => {
+        setSelectedItemName(item.name);
     }
     
     return (
