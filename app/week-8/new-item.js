@@ -59,7 +59,7 @@ export default function NewItem({onAddItem}) {
                     </select>
                 </div>
                 <div className="mr-2">
-                    <p className="text-blue-700 text-xl font-semibold mt-4 text-center">newItem: {quantity}</p>
+                    <p className="text-blue-700 text-xl font-semibold mt-4 text-center">Quantity: {quantity}</p>
                     <div className="flex justify-center mb-6">
                         <button type="button" className = "rounded-2xl h-10 w-24 mr-10 bg-cyan-600 text-gray-200 border-2 border-sky-700 hover:bg-cyan-500 hover:text-yellow-950 active:bg-blue-300 active:underline active:text-stone-800 active:border-2 active:border-cyan-600" onClick={increment}>Increment</button>
                         <button type="button" className = "rounded-2xl h-10 w-24 ml-10 bg-pink-700 text-gray-200 border-2 border-pink-900 hover:bg-rose-500 hover:text-yellow-950 active:underline active:bg-rose-30 active:text-stone-800 active:border-2 active:border-pink-700" onClick={decrement}>Decrement</button>
