@@ -16,11 +16,11 @@ export default function ItemList({items}) {
 
     return(
         <main>
-            <button onClick={() => setSortBy("name")}
-                style={{backgroundColor: sortBy === "name"? "blue" : "brown"}}> Sort by Name </button>
-            <button onClick={() => setSortBy("category")}
+            <button className="mr-6 p-2 rounded-2xl" onClick={() => setSortBy("name")}
+                style={{backgroundColor: sortBy === "name"? "#ecfccb" : "brown"}}> Sort by Name </button>
+            <button className="p-2 rounded-2xl" onClick={() => setSortBy("category")}
                 style={{backgroundColor: sortBy === "category"? "blue" : "brown"}}> Sort by Category </button>
-            <div> 
+            <div className="pt-4"> 
                 {sorted.map((item) => (<ul key={item.id} className="mb-2"> 
                     <li>{item.name} x{item.quantity}</li>
                     <li>in the {item.category} isle</li>
