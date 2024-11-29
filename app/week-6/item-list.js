@@ -7,6 +7,7 @@ import { useState } from "react";
 
 export default function ItemList() {
     const [sortBy, setSortBy] = useState("name");
+    let items = [...itemsJson];
 
     const sorted = items.sort((a, b) => {
         if (sortBy === "name") {

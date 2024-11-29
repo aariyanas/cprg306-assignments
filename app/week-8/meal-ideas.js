@@ -9,8 +9,7 @@ export default function MealIdeas(ingredient) {
     };
 
     useEffect(() => {
-        loadMeals();
-    }, [ingredient]);
+        loadMeals();}, [ingredient]);
 
     return (
         <div>
