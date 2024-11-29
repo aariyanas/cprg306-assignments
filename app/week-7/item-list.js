@@ -22,7 +22,7 @@ export default function ItemList({items}) {
                 style={{backgroundColor: sortBy === "category"? "blue" : "brown"}}> Sort by Category </button>
             <div className="pt-4"> 
                 {sorted.map((item) => (<ul key={item.id} className="mb-2"> 
-                    <li onSelect={handleItemSelect}>{item.name} x{item.quantity}</li>
+                    <li>{item.name} x{item.quantity}</li>
                     <li>in the {item.category} isle</li>
                     </ul>))}
             </div>   
