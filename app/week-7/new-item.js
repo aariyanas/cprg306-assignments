@@ -59,13 +59,13 @@ export default function NewItem({onAddItem}) {
                     </select>
                 </div>
                 <div className="mr-2">
-                    <p className="text-blue-700 text-xl font-semibold mt-4 text-center">Quantity: {quantity}</p>
+                    <p className="text-blue-700 text-xl font-semibold mt-4 mb-1 text-center">Quantity: {quantity}</p>
                     <div className="flex justify-center mb-6">
-                        <button type="button" className = "rounded-2xl h-10 w-24 mr-10 bg-cyan-600 text-gray-200 border-2 border-sky-700 hover:bg-cyan-500 hover:text-yellow-950 active:bg-blue-300 active:underline active:text-stone-800 active:border-2 active:border-cyan-600" onClick={increment}>Increment</button>
-                        <button type="button" className = "rounded-2xl h-10 w-24 ml-10 bg-pink-700 text-gray-200 border-2 border-pink-900 hover:bg-rose-500 hover:text-yellow-950 active:underline active:bg-rose-30 active:text-stone-800 active:border-2 active:border-pink-700" onClick={decrement}>Decrement</button>
+                        <button type="button" className = "rounded-xl h-8 w-10 mr-8 bg-cyan-600 text-gray-200 border-2 border-sky-700 font-black hover:bg-cyan-500 hover:text-yellow-950 active:bg-blue-300 active:underline active:text-stone-800 active:border-2 active:border-cyan-600" onClick={increment}>+</button>
+                        <button type="button" className = "rounded-xl h-8 w-10 ml-8 bg-pink-700 text-gray-200 border-2 border-pink-900 font-black hover:bg-rose-500 hover:text-yellow-950 active:underline active:bg-rose-30 active:text-stone-800 active:border-2 active:border-pink-700" onClick={decrement}>-</button>
                     </div>
                     <div className="flex justify-center">
-                        <input type="submit" value="Add Item" className="bg-blue-900 text-gray-200 hover:bg-blue-400 w-64 p-2 rounded-full text-center bg-emerald-600 border border-green-900 border-2 hover:bg-emerald-400 hover:text-yellow-950 active:bg-emerald-300 active:underline"></input>
+                        <input type="submit" value="Add to Shopping List" className="bg-blue-900 text-gray-200 hover:bg-blue-400 w-64 p-2 rounded-full text-center bg-emerald-600 border border-green-900 border-2 hover:bg-emerald-400 hover:text-yellow-950 active:bg-emerald-300 active:underline"></input>
                     </div>
                 </div>
             </form>
