@@ -25,6 +25,12 @@ export default function Page(){
       <li>
         Week 8 - click <Link className=" font-semibold hover:underline hover:text-blue-600" href="http://localhost:3000/week-8"> here!</Link>
       </li>
+      <li>
+        Week 9 - click <Link className=" font-semibold hover:underline hover:text-blue-600" href="http://localhost:3000/week-9"> here!</Link>
+      </li>
+      <li>
+        Week 10 - click <Link className=" font-semibold hover:underline hover:text-blue-600" href="http://localhost:3000/week-10"> here!</Link>
+      </li>
     </ol>
   </div>
   )
