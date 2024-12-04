@@ -8,4 +8,4 @@ export default function Page({name, quantity, category}){
         </div>
     </main>
     );
-}
+} 
